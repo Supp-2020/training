@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regsitration Form </title>
+  <style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: #ccccff;
+    }
+    #container{
+      margin: 20px auto;
+      max-width: 50%;
+      padding: 50px 50px;      
+    }
+
+    .form-wrap{
+      border: 1px solid red;
+      background-color: azure;
+      border-radius: 3px;
+    }
+
+    .form-wrap h1{
+      text-align: center;
+      display: block;
+      margin: 20px 2px;
+    }
+
+    #fname{
+      width: 400px;
+      height: 20px;
+    }
+    #lname{
+      width: 400px;
+      height: 20px;
+    }
+    #email{
+      width: 400px;
+      height: 20px;
+    }
+
+    .form-wrap .form-group {
+      float: inline-end;
+      text-align: left;
+      margin: 20px 20px;
+    }
+
+    .form-wrap .form-group label{
+      display: inline-block;
+    }
+
+    .form-wrap .long{
+      width: 100%;
+      height: 1.4rem;
+    }
+
+    .form-wrap button {
+        color: beige;
+        background-color: #49c1a2;
+        border: 1px solid #37a08e;
+        padding: 0.4rem;        
+        display: block;
+        text-align: center;
+        margin: 10px 20px;  
+        border-radius: 3px;  
+        cursor: pointer; 
+    }
+
+    .form-wrap button:hover {
+        color: #000;        
+        background-color: #37a08e;        
+      }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="form-wrap">
+      <h1>Employee Registration</h1>
+      <form>
+        <div class="form-group long">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" />
+        </div>
+        <div class="form-group long">
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" />
+        </div>
+        <div class="form-group long">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <p>Enter your Gender</p>
+          <label for="gen1">Male</label>
+          <input type="radio" id="gen1" name="gen" value="Male">
+          <label for="gen2">Female</label>
+          <input type="radio" id="gen2" name="gen" value="Female">
+        </div>
+        <div class="form-group">
+          <label for="uage">Enter Age</label>
+          <input required min="18" max="60"  id="uage" name="uage" type="number">
+        </div>
+        <div class="form-group">
+          <p>Enter the city of birth </p>
+          <select name="bcity" id="bcity">
+            <option style="display: none;" value=""></option>
+            <option value="bangalore">Bangalore</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="sambalpur">Sambalpur</option>
+            <option value="mangalore">Mangalore</option>
+            <option value="patna">Patna</option>
+            <option value="srinagar">Srinagar</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="guwahati">Guwahati</option>
+            <option value="hassan">Hassan</option>
+            <option value="ramanagar">Ramanagar</option>
+            <option value="bidar">Bidar</option>
+            <option value="tumkur">Tumkur</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="file">Select your resume</label>
+          <input type="file" name="file" id="file" accept=".pdf, .doc, .docx"/>
+        </div>
+        <div class="form-group">
+          <p>Position applying for</p>
+          <input type="checkbox" name="pos" id="pos" />
+          <label for="pos">Developer</label>
+          <input type="checkbox" name="pos" id="pos" />
+          <label for="pos">Designer</label>
+          <input type="checkbox" name="pos" id="pos" />
+          <label for="pos">Testing Engineer</label>
+          <input type="checkbox" name="pos" id="pos" />
+          <label for="pos">Sales Support</label>
+          <input type="checkbox" name="pos" id="pos" />
+          <label for="pos">HR</label>
+        </div>
+        <div class="form-group">
+          <label for="jdate">Joining Date</label>
+          <input type="date" name="jdate" id="jdate" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    var uagee = document.getElementById("uage");    
+    uagee.addEventListener("input", function(){   
+      if(uagee.value<18){
+        uagee.setCustomValidity("too younger");
+      }
+      else if(uagee.value > 60){
+        uagee.setCustomValidity("too older");
+      }
+      else{
+        uagee.setCustomValidity("");
+      }
+    })    
+  </script>
+</body>
+</html>

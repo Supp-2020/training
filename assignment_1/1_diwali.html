@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    canvas{
+      background-color: antiquewhite;
+      border: 1px solid red;
+      display: block;
+      margin: 50px auto;     
+    }
+  </style>
+</head>
+<body>  
+  <canvas  width="1000" height="500" id="can"></canvas>
+  <script>
+    var ctx = document.getElementById("can").getContext("2d");
+    // ctx.beginPath();         
+    ctx.lineTo(50,10);
+      
+    // ctx.closePath();    
+    ctx.stroke();
+    ctx.save();
+    ctx.fillStyle = "silver";
+    ctx.fillRect(450,180,50,150);
+    
+    ctx.fillStyle = "brown";
+    ctx.fillRect(472,160,5,20);
+
+    ctx.fillStyle = "crimson";
+    ctx.beginPath();
+    ctx.ellipse(475, 130, 30, 7, Math.PI / 2, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+    // =====================================================================================
+    // star
+    ctx.fillStyle = "yellow";
+    ctx.beginPath();
+    ctx.moveTo(108, 0.0);
+    ctx.lineTo(141, 70);
+    ctx.lineTo(216, 78.3);
+    ctx.lineTo(162, 131);
+    ctx.lineTo(175, 205);
+    ctx.lineTo(108, 170);
+    ctx.lineTo(41.2, 205);
+    ctx.lineTo(55, 131);
+    ctx.lineTo(1, 78);
+    ctx.lineTo(75, 68);
+    ctx.lineTo(108, 0);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fill();
+    // =====================================================================================
+   // rocket
+    ctx.fillStyle = '#FF4500'; 
+    ctx.fillRect(150, 100, 100, 200);
+
+    ctx.beginPath();
+    ctx.moveTo(150, 100);
+    ctx.lineTo(200, 20);
+    ctx.lineTo(250, 100);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = 'brown'; 
+    //Fins
+    ctx.beginPath();
+    ctx.moveTo(150, 300);
+    ctx.lineTo(100, 350);
+    ctx.lineTo(150, 350);
+    ctx.closePath();
+    ctx.fill();
+  
+    ctx.beginPath();
+    ctx.moveTo(250, 300);
+    ctx.lineTo(300, 350);
+    ctx.lineTo(250, 350);
+    ctx.closePath();
+    ctx.fill();
+    //Tails
+    ctx.fillStyle = '#FFD700'; 
+    ctx.beginPath();
+    ctx.moveTo(170, 300);
+    ctx.lineTo(230, 300);
+    ctx.lineTo(200, 400);
+    ctx.closePath();
+    ctx.fill();   
+    //======================================================================================
+    // text
+    ctx.restore();
+    ctx.font = "25px arial";
+    ctx.fillStyle = "charcoal";
+    ctx.fillText("May the festival of lights bring lot of peace and prosperity to you and your family ", 70, 450);       
+    ctx.font = "40px monospace";
+    ctx.fillStyle = "orange";  
+    ctx.scale(2,2); 
+    ctx.translate(20,50);       
+    ctx.fillText("HAPPY DIWALI", 100, 150); 
+    
+    
+  </script>
+</body>
+</html>
