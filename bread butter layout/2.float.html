@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+  <style>
+    .container{
+      background-color: bisque;
+      width: 1350px;
+      height: 575px;      
+    }
+    header h3{
+      clear: both;
+      background-color: yellowgreen;
+      height: 20px;      
+      width: 1330px;
+      padding: 10px;      
+    }
+    footer h3{
+      clear: both;
+      background-color: yellowgreen;
+      height: 20px;      
+      width: 1330px;
+      padding: 10px;      
+    } 
+    nav h4{
+      background-color: aquamarine;
+      height: 20px;
+      width: 1330px;      
+      padding: 10px;
+    }
+    main{  
+      margin-left: 20px;    
+      background-color: paleturquoise;
+      height: 350px;
+      width: 800px;
+      float: left;           
+    }
+    main section{      
+      background-color: orange;
+      height: 250px;
+      width: 750px;
+      margin-left: 10px;           
+    }
+    section article{
+      width: 700px;
+      margin: 10px;
+      padding: 5px;
+      height: 40px;      
+      background-color: palevioletred;
+      border: 1px solid black;      
+    }
+    aside{       
+      float: left;     
+      margin-left: 20px;
+      background-color: royalblue;
+      height: 300px;
+      width: 300px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h3>HEADER</h3>      
+    </header>
+    <nav>
+      <h4>NAVIGATION</h4>
+    </nav>
+    <main><h1>MAIN</h1>
+      <section>
+        <h3>Section</h3>
+        <article class="box">ARTICLE</article>
+        <article class="box">ARTICLE</article>
+        <article class="box">ARTICLE</article>
+      </section>
+    </main>
+    <aside>
+    <h3>ASIDE HEADER</h3>
+    </aside>
+    <br>
+    <footer><h3>FOOTER</h3></footer>
+  </div>
+</body>
+</html>
