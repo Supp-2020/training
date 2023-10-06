@@ -1,0 +1,27 @@
+*{
+  background-color: #ccccff;
+  font-family: sans-serif
+}
+label,input,button,p{
+  margin: 5px;
+  padding: 10px;
+}
+p{
+  font-size: 18px;
+  text-align: justify;
+  
+}
+#searchbox{
+  width: 300px;
+}
+.btn{
+  border-radius: 20px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: #ff573f;
+  color: #fff
+}
+#higlight{
+  background-color: yellow;
+}
