@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .list-button:hover{
+        background-color: palegreen;
+        cursor: pointer;
+      }
+    </style>
+    <script src="lib/jquery-3.7.1.js"></script>
+    <script type="module">
+      var tempdata = {};
+      // var movielist = {}
+      $(() => {
+        $.getJSON("data/heroes-data.json", function (data, status, jqxhr) {
+          tempdata = data;
+          $(data.herolist).each(function (idx, val) {
+            $(".hlist").append(
+              `<option value="${idx}">${val.title}</option>`
+            );
+          });
+        });   
+
+        $(".hlist").on("change", function (event) {
+          // console.log(event.target.value)
+          // console.log(tempdata.herolist[event.target.value]);
+          let selectedhero = tempdata.herolist[event.target.value];
+          // let selectedheroname = $(".hlist").val()
+          // console.log(selectedheroname)
+          let movielist = selectedhero.movieslist
+          // console.log(movielist)
+
+          let movielistHtml = ""
+          // let movielistImage = ""
+          if(movielist.length > 0){
+            $.each(movielist, function (index, val) {
+              movielistHtml += `<li class="list-button" data-src="${val.poster.replace("assets/images","images/")}">${val.title}</li>`;
+            });            
+          }
+          else{
+            movielistHtml = `<li>No movies of that hero</li>`;
+          }
+          // $.each(movielist, function (index, val) {
+          //     movielistImage += `<img src="${val.poster.replace("assets/images","images/")}" `;
+          // });
+
+          $(".box").html(`
+          <div class="card" style="width: 18rem;">
+            <img src="${selectedhero.poster.replace("assets/images","images/")}" class="card-img-top" alt="${selectedhero.title}">
+                <div class="card-body">
+                  <h5 class="card-title">${selectedhero.title}</h5>
+                  <p class="card-text">
+                    Full Name : ${selectedhero.firstname + " " + selectedhero.lastname}
+                  <br/>
+                     Release on : ${selectedhero.releasedate}
+                  <br/>
+                    Ticket Price : ${selectedhero.ticketprice}
+                    <br/>
+                      City : ${selectedhero.city}
+                  </p>
+                  <button class="btn btn-primary movies">Movies</button>
+                  <div hidden class="card" style="width: 100%">
+                    <ul class="list-group list-group-flush">
+                        ${movielistHtml}                        
+                    </ul>
+                  </div>
+                  <div class="movie-image"></div>  
+                </div>
+              </div>`);
+        })
+        $(".box").on("click","button",function(evt){
+          $(evt.target).next().removeAttr("hidden");
+        }) 
+
+        $(".box").on("click",".list-button",function(evt){
+          // let selectedheroname = $(".hlist").val()
+          // console.log(selectedheroname)
+          // let movielistIndex = $(this).data("index")
+          let movielistSrc = $(this).data("src")
+          // console.log(movielistIndex)
+          // console.log(movielistSrc)
+          $(".movie-image").html(`<img src="${movielistSrc}"  class="img-fluid" alt="Movie Poster">`)
+        })     
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <select class="hlist">
+        <option value="">Default</option>
+      </select>
+      <div class="box"></div>
+    </div>
+
+  </body>
+</html>

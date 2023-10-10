@@ -1,0 +1,8 @@
+{
+  "avengers" : [
+    {"title" : "HUlk", "firstname" : "Bruce", "lastname" : "Chawla"},
+    {"title" : "BUlk", "firstname" : "Truce", "lastname" : "Bawla"},
+    {"title" : "PALK", "firstname" : "Cruce", "lastname" : "GHawla"},
+    {"title" : "KAlK", "firstname" : "Gruce", "lastname" : "Mawla"}
+  ]
+}
