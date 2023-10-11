@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>User Details Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"/>
+      <style>
+        body{ background-color: #91efff;}
+      </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">User Details</div>
+            <div class="card-body">
+              <form method="GET" action="travelguide.html">
+                <div class="form-group">
+                  <label for="sim_details">SIM Details</label>
+                  <input type="number" class="form-control" id="sim_details" placeholder="Enter SIM details"/>
+                </div>
+                <div class="form-group">
+                  <label for="mobile_number">Mobile Number</label>
+                  <input type="tel" class="form-control" id="mobile_number"
+                  placeholder="Enter mobile number"/>
+                </div>
+                <div class="form-group">
+                  <label for="imei_number">IMEI Number</label>
+                  <input type="tel" class="form-control" id="imei_number"
+                  placeholder="Enter IMEI number"/>
+                </div>
+                <div class="form-group">
+                  <label for="service_provider">Service Provider</label>
+                  <input type="text" class="form-control" id="service_provider"
+                  placeholder="Enter Service Provider"/>
+                </div>
+                <div class="form-group">
+                  <label for="network_status">Network Status</label>
+                  <select id="network_status" class="form-control">
+                    <option selected>Select</option>
+                    <option value="1">Good</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">Poor</option>
+                  </select>                
+                </div>
+                <div class="form-group">
+                  <label for="battery_status">Battery Status</label>
+                  <input type="tel" class="form-control" id="battery_status"
+                  placeholder="Enter Battery in Percentage(%)"/>                  
+                </div>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <textarea class="form-control" id="address" rows="4" placeholder="Enter Address"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="health_condition">Health Condition</label>
+                  <input type="text" class="form-control" id="health_condition"
+                  placeholder="Enter any special health conditions or allergies"/> 
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

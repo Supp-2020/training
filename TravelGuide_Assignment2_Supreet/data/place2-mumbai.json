@@ -1,0 +1,194 @@
+{
+  "place": {
+    "sl" : 2,
+    "city": "mumbai",
+    "state": "maharashtra",
+    "type_of_place": {
+      "historical": {
+         "gateway of india" : {
+          "pn" : 101,        
+          "pincode" : "567092",
+          "lat": 12.9507,
+          "lon": 77.5848,  
+          "timings": "9:00 AM - 6:00 PM",
+          "dress_code": "Casual",
+          "entrance_fees": "Rs.10",
+          "special_instructions": "No touching the monument"
+          },
+          "clock tower" : {
+            "pn" : 102,        
+            "pincode" : "567082",
+            "lat": 12.9507,
+            "lon": 77.5848,
+            "timings": "9:00 AM - 6:00 PM",
+            "dress_code": "Casual",
+            "entrance_fees": "No fee",
+            "special_instructions": ""
+          },
+          "banganga tank" : {
+            "pn" : 103,        
+            "pincode" : "567071",
+            "lat": 12.9507,
+            "lon": 78.5849,
+            "timings": "11:00 AM - 4:00 PM",
+            "dress_code": "Casual",
+            "entrance_fees": "No fee",
+            "special_instructions": "No Parking in front of the gate"
+          }
+        },
+      "adventurous": {
+        "della adventure park" : {
+          "pn" : 104,        
+          "pincode" : "567092",
+          "lat": 12.9507,
+          "lon": 77.5848,  
+          "timings": "06:00 AM - 6:00 PM",
+          "dress_code": "Comfortable clothing",
+          "entrance_fees": "Free",
+          "special_instructions": "Wear sports shoes"
+        },
+        "kidzania mumbai" : {
+          "pn" : 105,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "10:00 AM - 7:00 PM",
+          "dress_code": "Comfortable clothing",
+          "entrance_fees": "Rs15",
+          "special_instructions": "Bring extra clothes"
+        }
+      },
+      "park": {
+        "priyadarshani park" : {
+          "pn" : 106,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "8:00 AM - 8:00 PM",
+          "dress_code": "Outdoor attire",
+          "entrance_fees": "Free",
+          "special_instructions": "No littering"
+        },
+        "sanjay gandi national park" : {
+          "pn" : 107,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "7:00 AM - 7:00 PM",
+          "dress_code": "Outdoor attire",
+          "entrance_fees": "Rs20",
+          "special_instructions": "No littering"
+        }
+      },
+      "religious": {
+        "shirdi sai" : {
+          "pn" : 108,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "6:00 AM - 8:00 PM",
+          "dress_code": "Modest attire",
+          "entrance_fees": "Donations welcome",
+          "special_instructions": "Maintain silence"
+        },
+        "haji ali dargah" : {
+          "pn" : 109,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "6:00 AM - 8:00 PM",
+          "dress_code": "Modest attire",
+          "entrance_fees": "Donations welcome",
+          "special_instructions": "Maintain silence"
+        },
+        "gloria church" : {
+          "pn" : 110,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "6:00 AM - 8:00 PM",
+          "dress_code": "Modest attire",
+          "entrance_fees": "Donations welcome",
+          "special_instructions": "Maintain silence"
+        }
+      },
+      "shopping": {
+        "zaveri bazar" : {
+          "pn" : 111 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "10:00 AM - 9:00 PM",
+          "dress_code": "None",
+          "entrance_fees": "None",
+          "special_instructions": "Be aware of pickpockets"
+        },
+        "colaba causeway" : {
+          "pn" : 112 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "09:00 AM - 11:00 PM",
+          "dress_code": "None",
+          "entrance_fees": "None",
+          "special_instructions": "Bargaining allowed"
+        }
+      },
+      "beach": {
+        "marine drive" : {
+          "pn" : 113 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "Sunrise to Sunset",
+          "dress_code": "Swimwear",
+          "entrance_fees": "None",
+          "special_instructions": "Follow lifeguard instructions"
+        },
+        "juhu beach" : {
+          "pn" : 114 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "Sunrise to Sunset",
+          "dress_code": "Swimwear",
+          "entrance_fees": "None",
+          "special_instructions": "Follow lifeguard instructions"
+        }
+      },
+      "food_places": {
+        "mabruk" : {
+          "pn" : 115 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "09:00 AM - 11:00 PM",
+          "dress_code": "Casual",
+          "entrance_fees": "None",
+          "special_instructions": "Reservations recommended"
+        },
+        "fiona" : {
+          "pn" : 116 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "11:00 AM - 12:00 PM",
+          "dress_code": "Casual",
+          "entrance_fees": "None",
+          "special_instructions": "Reservations recommended"
+        },
+        "the earth plate" : {
+          "pn" : 117 ,        
+          "pincode" : "567092",
+          "lat": 11.9507,
+          "lon": 75.5848,  
+          "timings": "09:00 AM - 11:00 PM",
+          "dress_code": "Casual",
+          "entrance_fees": "None",
+          "special_instructions": "Only cash is taken"
+        }
+      }
+    }  
+  }
+}
+
