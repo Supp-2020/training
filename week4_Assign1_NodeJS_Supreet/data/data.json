@@ -1,0 +1,92 @@
+[
+  {
+    "hero": "Vision",
+    "poster": "Vision.jpg",
+    "city": "Delhi",
+    "power": 18
+  },
+  {
+    "hero": "Falcon",
+    "poster": "Falcon.jpg",
+    "city": "Pune",
+    "power": 81
+  },
+  {
+    "hero": "Batman",
+    "poster": "Batman.jpg",
+    "city": "Dadar",
+    "power": 38
+  },
+  {
+    "hero": "Dead Pool",
+    "poster": "Dead Pool.jpg",
+    "city": "Bangalore",
+    "power": 52
+  },
+  {
+    "hero": "Batman",
+    "poster": "Batman.jpg",
+    "city": "Gurgaon",
+    "power": 18
+  },
+  {
+    "hero": "Hulk",
+    "poster": "Hulk.jpg",
+    "city": "Dholakpur",
+    "power": 52
+  },
+  {
+    "hero": "Vision",
+    "poster": "Vision.jpg",
+    "city": "Delhi",
+    "power": 87
+  },
+  {
+    "hero": "Ironman",
+    "poster": "Ironman.jpg",
+    "city": "Dholakpur",
+    "power": 56
+  },
+  {
+    "hero": "Black Widow",
+    "poster": "Black Widow.jpg",
+    "city": "Dholakpur",
+    "power": 56
+  },
+  {
+    "hero": "Hawlkeye",
+    "poster": "Hawlkeye.jpg",
+    "city": "Delhi",
+    "power": 38
+  },
+  {
+    "hero": "Thor",
+    "poster": "Thor.jpg",
+    "city": "Gurgaon",
+    "power": 42
+  },
+  {
+    "hero": "Falcon",
+    "poster": "Falcon.jpg",
+    "city": "Pune",
+    "power": 7
+  },
+  {
+    "hero": "Thor",
+    "poster": "Thor.jpg",
+    "city": "Gurgaon",
+    "power": 29
+  },
+  {
+    "hero": "Captain Marvel",
+    "poster": "Captain Marvel.jpg",
+    "city": "Shillong",
+    "power": 76
+  },
+  {
+    "hero": "Black Panther",
+    "poster": "Black Panther.jpg",
+    "city": "Shillong",
+    "power": 12
+  }
+]
